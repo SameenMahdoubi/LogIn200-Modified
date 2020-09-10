@@ -16,7 +16,15 @@ namespace LogIn200
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            CredentialsM model = new CredentialsM("Alice", "WonderLand");
+            LoginForm view = new LoginForm();
+            
+            Controller controller = new Controller(model, view);
+            view.SetController(controller);
+            
+            Application.Run(view);
+            
         }
     }
 }

@@ -4,12 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44961450-024F-47C2-B663-4DCE760D4998}</ProjectGuid>
+    <ProjectGuid>{DC05FE4F-8088-44C5-9DEE-716CFE6EC464}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LogIn200</RootNamespace>
-    <AssemblyName>LogIn200</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Login200_Modified</RootNamespace>
+    <AssemblyName>Login200-Modified</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,18 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller.cs" />
-    <Compile Include="CredentialsM.cs" />
-    <Compile Include="VIew.cs">
+    <Compile Include="ControllerModified.cs" />
+    <Compile Include="CredentialsMModified.cs" />
+    <Compile Include="LoginModifiedForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VIew.Designer.cs">
-      <DependentUpon>VIew.cs</DependentUpon>
+    <Compile Include="LoginModifiedForm.Designer.cs">
+      <DependentUpon>LoginModifiedForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="VIew.resx">
-      <DependentUpon>VIew.cs</DependentUpon>
+    <EmbeddedResource Include="LoginModifiedForm.resx">
+      <DependentUpon>LoginModifiedForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
